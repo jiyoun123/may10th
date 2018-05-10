@@ -1,0 +1,13 @@
+<p>
+    <strong>Title:</strong>
+    <%= @first.title %>
+</p>
+
+<p>
+    <strong>Content:</strong>
+    <p style="color:red;background-color:yellow;"><%= @first.content %></p>
+</p>
+
+<button><%=link_to "목록",firsts_path%></button>
+<button><%=link_to "삭제",first_path(@first),method:  :delete%></button>
+<button><%=link_to "수정",edit_first_path(@first)%></button>

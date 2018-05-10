@@ -1,0 +1,16 @@
+<h1>게시글 입력</h1>
+<%= form_for :first, url: '/firsts/' do |f|%>
+    <p>
+        <font size="3" color="red">제목</font><br>
+        <%=f.text_field :title %>
+    </p>
+    
+    <p>
+        <font size="3" color="red">내용</font><br>
+        <%=f.text_field :content %>
+    </p>
+    
+    <p>
+        <%=f.submit %>
+    </p>
+<% end %>
